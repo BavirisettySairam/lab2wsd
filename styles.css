@@ -1,0 +1,119 @@
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    color: grey;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container-section{
+    background-image: url("https://images.unsplash.com/photo-1522120691812-dcdfb625f397?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    text-align: center;
+    color: blue;
+    text-decoration: blueviolet;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.book-item {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 200px;
+    text-align: center;
+}
+
+.gallery-item {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    display:flex;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+
+
+button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+form-group {
+    margin-bottom: 1rem;
+}
+form-check {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .book-item {
+        margin: 0 auto 10px;
+    }
+}
+img{
+    display:flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: white;
+    border: 5px solid white; 
+    justify-content: space-evenly;
+    height: 9 em;
+    width: 75%;
+
+    
+}
